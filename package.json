@@ -1,0 +1,20 @@
+{
+  "name": "stock-app",
+  "version": "1.0.0",
+  "description": "stock analysis app",
+  "main": "bundle1306d16da579f4a7bef4.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"    
+  },
+  "keywords": [
+    "stock"
+  ],
+  "author": "Abilash A",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "path": "^0.12.7"
+  }
+}
