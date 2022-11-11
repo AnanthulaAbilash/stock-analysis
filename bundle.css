@@ -1934,7 +1934,8 @@ abbr[title] {
   align-items: center;
   align-content: center;
   width: 715px;
-  height: 400px;
+  height: 450px;
+  /* height: auto !important; */
 }
 
 /* 
