@@ -1390,6 +1390,63 @@ html {
   padding-bottom: 5rem;
 
 }
+
+/* #scrollToTopBtn {
+  border-radius: 50% !important;
+  height: 1.4rem !important;
+  outline: 2px outset white;
+  background: none;
+  color: white !important;
+}
+
+#scrollToTop {
+  display: block !important;
+  position: fixed;
+  top: -3rem;
+  right: -94vw;
+  width: fit-content;
+  height: fit-content;
+  z-index: 4000
+}
+
+#scrollToTopBtn:hover {
+  box-shadow: none;
+} */
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 5rem;
+  right: 0.4rem;
+  z-index: 3000;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+#scrollToTopBtn :hover {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+
+#scrollToTopBtn>img {
+  width: 20px;
+  height: 20px;
+  outline: 2px outset #ffffffa8;
+  border-radius: 50%;
+  /* border: 1px solid white; */
+  box-shadow: inset 0 0 20px 10px black;
+}
+
+#scrollToTopBtn>img:hover {
+  box-shadow: 0 0 8px rgba(244, 240, 240, 0.617);
+
+  outline: 2px outset gray;
+
+}
 .formItem0 {
   position: relative;
   display: flex;
@@ -1924,7 +1981,9 @@ abbr[title] {
 
 }
 
-
+g.g-ytitle {
+  transform: translate(8px, 10px);
+}
 
 #stockDisplay {
   display: block !important;
@@ -2468,7 +2527,8 @@ abbr[title] {
 .footer .bubbles .bubble,
 .bubbleJs .bubble,
 .bubbleJsMobl .bubble,
-.bubbleJsMobl0 .bubble {
+.bubbleJsMobl0 .bubble,
+.bubbleJsMobl2 .bubble {
   position: absolute;
   left: var(--position, 50%);
   background: var(--footer-background);
@@ -2622,7 +2682,10 @@ abbr[title] {
 
 
 
-@media screen and (min-width : 641px) and (max-width: 1280px) {
+
+
+
+@media screen and (min-width : 801px) and (max-width: 1280px) {
 
   .chartSection {
 
@@ -2676,6 +2739,83 @@ abbr[title] {
   }
 }
 
+@media screen and (min-width : 641px) and (max-width: 800px) {
+  .chartSection {
+
+    margin-right: auto !important;
+  }
+
+  #stockDisplay {
+
+    width: 715px;
+    height: auto !important;
+  }
+
+
+
+  .navList {}
+
+  .mainSection {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+
+    align-content: center;
+    flex-wrap: nowrap;
+
+    margin: auto;
+
+    padding-bottom: 2rem;
+  }
+
+  .inputContainer,
+  .returnSection {
+    width: auto;
+
+    height: auto;
+    overflow: visible;
+    margin: auto;
+
+    margin-top: 5rem;
+  }
+
+  .dashboard {
+    width: auto;
+
+    height: auto;
+    overflow: visible;
+
+    right: 0;
+  }
+
+  .mainSection {
+
+    align-items: flex-start !important;
+    align-content: center;
+    flex-wrap: nowrap;
+    margin: auto;
+    padding-bottom: 2rem;
+    margin-left: 0;
+  }
+
+  #stockAnalysTable {
+    /* display: block; */
+    width: 765px !important;
+  }
+
+  .inputContainer,
+  .returnSection {
+    margin-top: 5rem;
+    align-self: center;
+    justify-self: center !important;
+    margin-left: 50vw !important;
+    transform: translate(-50%, 0) !important;
+  }
+}
+
 /* @media screen and (min-width : 951px) and (max-width: 1281px) {
 
   .chartSection {
@@ -2698,6 +2838,24 @@ abbr[title] {
     --widthContainer: 40px !important;
   }
 
+  body {
+    background-image: none;
+  }
+
+
+  #scrollToTopBtn {
+    bottom: 3.5rem;
+    right: -0.1rem
+  }
+
+  #scrollToTopBtn>img {
+    outline: 1px outset gray;
+  }
+
+  #scrollToTopBtn>img:hover {
+    outline: none;
+  }
+
   .appTitle {
     position: absolute;
     max-width: 60vw;
@@ -2705,7 +2863,7 @@ abbr[title] {
     font-size: 1.2rem;
     line-height: 175%;
     right: max(5rem, 25vw);
-    top: -2.8rem;
+    top: -2.1rem;
   }
 
   #toggleAboutNav,
@@ -2813,16 +2971,23 @@ abbr[title] {
   }
 
   .footer .content p {
-    left: -6.5rem !important;
+    transform: scale(0.95);
+    right: 0rem;
+    bottom: -0.6rem;
   }
 
   .footer-icons1 {
+    transform: scale(0.85);
     left: -4.5rem !important;
-    top: 2.8rem !important;
+    top: 3rem !important;
   }
 
+
   .logoContainer {
+    transform: scale(0.9);
     border: 0 !important;
+    right: -2.1rem;
+    bottom: -0.75rem;
   }
 
   .card-logo {
@@ -3109,8 +3274,16 @@ abbr[title] {
     box-shadow: -0.6px -0.6px 5px 0.2px rgb(21 21 20 / 77%), 0.6px 0.6px 5px 0.2px rgb(21 21 20 / 77%);
   }
 
+  /*  svg.main-svg {
+    transform: translate(0px, 0px) scale(1.15);
+} */
+
   g.legend {
-    transform: translate(52px, 55px);
+    transform: translate(35px, 35px) scale(0.7);
+  }
+
+  g.xy {
+    transform: translate(-25px, -33px) scale(1.20, 1.3);
   }
 
   .legend>rect.bg {
@@ -3118,12 +3291,24 @@ abbr[title] {
     fill: none !important;
   }
 
+  div.modebar {
+    transform: translate(-15px, -5px) scale(0.85);
+  }
+
   g.annotation[data-index='1'] {
-    transform: translate(-15px, 20px);
+    transform: translate(57px, 68px) scale(0.8);
+  }
+
+  g.g-ytitle {
+    transform: translate(31px, 15px) scale(0.85);
+  }
+
+  g.g-xtitle {
+    transform: translate(5px, 52px) scale(0.85);
   }
 
   g.annotation[data-index='0'] {
-    transform: translate(-75px, 1px) !important;
+    transform: translate(-5px, -4px) scale(0.75) !important;
   }
 
   .legend>rect.bg {
@@ -3304,7 +3489,7 @@ abbr[title] {
 
 }
 
-@media screen and (min-width : 550px) and (max-width: 649px) {
+@media screen and (min-width : 550px) and (max-width: 641px) {
   .appTitle {
     right: max(4rem, 22vw);
     font-size: 1.3rem;
@@ -3367,13 +3552,23 @@ abbr[title] {
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 401px) {
 
   #stockTradeTable {
     padding: 0 !important;
     border: 0 !important;
   }
+
+  #stockTradeTableBody {
+    font-size: 0.7rem !important;
+  }
+
+  thead {
+    font-size: 0.73rem !important;
+  }
 }
+
+
 
 @media screen and (min-width : 460px) and (max-width: 540px) {
 
@@ -3446,6 +3641,210 @@ abbr[title] {
   .footer .content text {
     font-size: 0.7rem;
 
+  }
+
+}
+
+/* transform: translate(55px, 63px) scale(0.8); */
+
+
+@media screen and (max-width: 440px) {
+
+  #closeHelpBtn {
+    padding: 0 0rem;
+    font-size: 0.65rem !important;
+  }
+
+  #zoomHelpImgBtnMobl,
+  #zoomDisplImgBtnMobl,
+  #zoomAnalImgBtnMobl {
+    width: 2.5rem !important;
+    font-size: 0.65rem !important;
+    right: -0.1rem !important;
+  }
+
+  g.legend {
+    transform: translate(35px, 35px) scale(0.7);
+  }
+
+  g.xy {
+    transform: translate(-25px, -33px) scale(1.20, 1.3);
+  }
+
+  .legend>rect.bg {
+    stroke-opacity: 0.15 !important;
+    fill: none !important;
+  }
+
+  div.modebar {
+    transform: translate(-15px, -5px) scale(0.85);
+  }
+
+  g.annotation[data-index='1'] {
+    transform: translate(57px, 68px) scale(0.8);
+  }
+
+  g.g-ytitle {
+    transform: translate(38px, 20px) scale(0.75);
+  }
+
+  g.g-xtitle {
+    transform: translate(5px, 35px) scale(0.85);
+  }
+
+  g.annotation[data-index='0'] {
+    transform: translate(-5px, -4px) scale(0.75) !important;
+  }
+
+  g.xtick {
+    transform: translate(15px, 40px) scale(0.95, 0.75);
+  }
+
+  g.ytick {
+    transform: translate(5px, -1px) scale(0.75, 0.95);
+  }
+
+
+}
+
+@media screen and (min-width: 401px) and (max-width: 420px) {
+
+  #stockTradeTableBody {
+    font-size: 0.73rem !important;
+  }
+
+  thead {
+    font-size: 0.75rem !important;
+  }
+
+  g.xy {
+    transform: translate(-28px, -33px) scale(1.18, 1.25) !important;
+  }
+
+  g.ytick {
+    transform: translate(10px, -1px) scale(0.75, 0.95) !important;
+  }
+
+  g.g-xtitle {
+    transform: translate(5px, 40px) scale(0.85) !important;
+  }
+
+  g.annotation[data-index='1'] {
+    transform: translate(57px, 55px) scale(0.8) !important;
+  }
+
+}
+
+@media screen and (min-width: 440px) and (max-width: 640px) {
+  g.ytick {
+    transform: translate(10px, -1px) scale(0.75, 0.95) !important;
+  }
+
+  g.xtick {
+    transform: translate(15px, 40px) scale(0.95, 0.75) !important;
+  }
+
+  g.xy {
+    transform: translate(-22px, -33px) scale(1.13, 1.25);
+  }
+
+  g.g-xtitle {
+    transform: translate(5px, 45px) scale(0.85);
+  }
+
+  g.g-ytitle {
+    transform: translate(38px, 15px) scale(0.85);
+  }
+
+  g.legend {
+    transform: translate(55px, 55px) scale(0.75);
+  }
+
+}
+
+@media screen and (min-width: 541px) and (max-width: 640px) {
+
+  g.legend {
+    transform: translate(45px, 45px) scale(0.9);
+  }
+
+  g.ytick {
+    transform: translate(5px, -1px) scale(0.85, 0.95) !important;
+  }
+
+  g.xtick {
+    transform: translate(15px, 40px) scale(0.95, 0.75) !important;
+  }
+
+  g.xy {
+    transform: translate(-18px, -20px) scale(1.09, 1.15);
+  }
+
+  g.g-xtitle {
+    transform: translate(5px, 45px) scale(0.85);
+  }
+
+  g.g-ytitle {
+    transform: translate(42px, 15px) scale(0.85);
+  }
+
+  g.annotation[data-index='0'] {
+    transform: translate(-5px, 0px) scale(0.8) !important;
+  }
+
+}
+
+@media screen and (max-width: 381px) {
+  g.annotation[data-index='1'] {
+    transform: translate(55px, 63px) scale(0.8) !important;
+  }
+
+}
+
+@media screen and (width: 390px) {
+  g.xtick {
+    transform: translate(15px, 35px) scale(0.95, 0.75) !important;
+  }
+
+}
+
+@media screen and (width: 412px) {
+  g.xtick {
+    transform: translate(15px, 38px) scale(0.95, 0.75) !important;
+  }
+
+  g.xy {
+    transform: translate(-24px, -33px) scale(1.18, 1.25) !important;
+  }
+
+}
+
+@media screen and (min-width:370px) and (max-width: 380px) {
+  g.xy {
+    transform: translate(-24px, -33px) scale(1.18, 1.285) !important;
+  }
+
+  g.ytick {
+    transform: translate(10px, -1px) scale(0.75, 0.95) !important;
+  }
+
+  g.xtick {
+    transform: translate(15px, 45px) scale(0.95, 0.75) !important;
+  }
+
+}
+
+@media screen and (width:360px) {
+  g.xy {
+    transform: translate(-30px, -33px) scale(1.22, 1.3);
+  }
+
+  g.ytick {
+    transform: translate(12px, -10px) scale(0.7, 0.95);
+  }
+
+  g.xtick {
+    transform: translate(15px, 45px) scale(0.95, 0.7) !important;
   }
 
 }
