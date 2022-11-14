@@ -1439,6 +1439,9 @@ html {
   border-radius: 50%;
   /* border: 1px solid white; */
   box-shadow: inset 0 0 20px 10px black;
+  /* filter: brightness(300%) contrast(60%);
+  -webkit-filter: brightness(300%) contrast(60%);
+  filter: opacity(60%); */
 }
 
 #scrollToTopBtn>img:hover {
@@ -2448,6 +2451,7 @@ g.g-ytitle {
   border: 2px solid rgba(255, 255, 255, 0.868);
   box-shadow: 0 0 5px rgba(244, 240, 240, 0.617);
   opacity: 0.9;
+  transform: scale(0.9);
 }
 
 .footer .content a {
