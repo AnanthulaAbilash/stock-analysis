@@ -3888,8 +3888,20 @@ background-position: 110px 40px, 0 0, 0 0, 0 0, 0 0, 0 -44px, 70px 60px,
 
 /* transform: translate(55px, 63px) scale(0.8); */
 
+@media screen and (min-width: 374px) and (max-width: 390px) {
+  g.ytick {
+    transform: translate(5px, 0px);
+  }
 
+  g .ytick>text {
+    font-size: 6px !important;
+  }
 
+  g.xtick {
+    transform: translate(15px, 30px) scale(0.95, 0.75);
+  }
+
+}
 
 @media screen and (max-width: 440px) {
 
@@ -3944,7 +3956,7 @@ background-position: 110px 40px, 0 0, 0 0, 0 0, 0 0, 0 -44px, 70px 60px,
   }
 
   g .xtick>text {
-    font-size: 7px !important;
+    font-size: 8px !important;
   }
 
   /* g.ytick {
@@ -3971,7 +3983,7 @@ background-position: 110px 40px, 0 0, 0 0, 0 0, 0 0, 0 -44px, 70px 60px,
   }
 
   g.xy {
-    transform: translate(-20px, -33px) scale(1.14, 1.22) !important;
+    transform: translate(-28px, -33px) scale(1.18, 1.25) !important;
   }
 
   g.ytick {
@@ -3990,15 +4002,15 @@ background-position: 110px 40px, 0 0, 0 0, 0 0, 0 0, 0 -44px, 70px 60px,
 
 @media screen and (min-width: 440px) and (max-width: 640px) {
   g.ytick {
-    transform: translate(0px, -1px) !important;
+    transform: translate(10px, -1px) scale(0.75, 0.95) !important;
   }
 
   g.xtick {
-    transform: translate(10px, 0px) !important;
+    transform: translate(15px, 40px) scale(0.95, 0.75) !important;
   }
 
   g.xy {
-    transform: translate(-1px, -28px) scale(1.05, 1.18);
+    transform: translate(-22px, -33px) scale(1.13, 1.25);
   }
 
   g.g-xtitle {
@@ -4006,35 +4018,31 @@ background-position: 110px 40px, 0 0, 0 0, 0 0, 0 0, 0 -44px, 70px 60px,
   }
 
   g.g-ytitle {
-    transform: translate(5px, 40px) scale(0.75);
-  }
-
-  g .xtick>text {
-    font-size: 0.6rem !important;
-  }
-
-  g.ytick text {
-    font-size: 0.5rem !important;
+    transform: translate(38px, 15px) scale(0.85);
   }
 
   g.legend {
-    transform: translate(55px, 38px) scale(0.8);
+    transform: translate(55px, 55px) scale(0.75);
   }
 
 }
 
 @media screen and (min-width: 541px) and (max-width: 640px) {
 
+  g.legend {
+    transform: translate(45px, 45px) scale(0.9);
+  }
+
   g.ytick {
-    transform: translate(0px, -1px) !important;
+    transform: translate(5px, -1px) scale(0.85, 0.95) !important;
   }
 
   g.xtick {
-    transform: translate(10px, 0px) !important;
+    transform: translate(15px, 40px) scale(0.95, 0.75) !important;
   }
 
   g.xy {
-    transform: translate(-1px, -28px) scale(1.05, 1.18);
+    transform: translate(-18px, -20px) scale(1.09, 1.15);
   }
 
   g.g-xtitle {
@@ -4042,19 +4050,7 @@ background-position: 110px 40px, 0 0, 0 0, 0 0, 0 0, 0 -44px, 70px 60px,
   }
 
   g.g-ytitle {
-    transform: translate(5px, 40px) scale(0.75);
-  }
-
-  g .xtick>text {
-    font-size: 0.6rem !important;
-  }
-
-  g.ytick text {
-    font-size: 0.5rem !important;
-  }
-
-  g.legend {
-    transform: translate(55px, 38px) scale(0.8);
+    transform: translate(42px, 15px) scale(0.85);
   }
 
   g.annotation[data-index='0'] {
@@ -4072,33 +4068,33 @@ background-position: 110px 40px, 0 0, 0 0, 0 0, 0 0, 0 -44px, 70px 60px,
 
 @media screen and (width: 390px) {
   g.xtick {
-    transform: translate(15px, 35px);
+    transform: translate(15px, 35px) scale(0.95, 0.75) !important;
   }
 
 }
 
 @media screen and (width: 412px) {
   g.xtick {
-    transform: translate(15px, 38px) !important;
+    transform: translate(15px, 38px) scale(0.95, 0.75) !important;
   }
 
   g.xy {
-    transform: translate(-24px, -33px) !important;
+    transform: translate(-24px, -33px) scale(1.18, 1.25) !important;
   }
-
-}
-
-@media screen and (width: 414px) {
-  g.xtick {
-    transform: translate(15px, 38px) !important;
-  }
-
 
 }
 
 @media screen and (min-width:370px) and (max-width: 380px) {
   g.xy {
     transform: translate(-24px, -33px) scale(1.18, 1.285) !important;
+  }
+
+  g.ytick {
+    transform: translate(10px, -1px) scale(0.75, 0.95) !important;
+  }
+
+  g.xtick {
+    transform: translate(15px, 45px) scale(0.95, 0.75) !important;
   }
 
 }
@@ -4109,26 +4105,11 @@ background-position: 110px 40px, 0 0, 0 0, 0 0, 0 0, 0 -44px, 70px 60px,
   }
 
   g.ytick {
-    transform: translate(12px, -10px);
+    transform: translate(12px, -10px) scale(0.7, 0.95);
   }
 
   g.xtick {
-    transform: translate(15px, 45px) !important;
-  }
-
-}
-
-@media screen and (min-width: 370px) and (max-width: 390px) {
-  g.ytick {
-    transform: translate(0px, 0px) !important;
-  }
-
-  g .ytick>text {
-    font-size: 6px !important;
-  }
-
-  g.xtick {
-    transform: translate(15px, 40px) scale(0.95, 0.75) !important;
+    transform: translate(15px, 45px) scale(0.95, 0.7) !important;
   }
 
 }
